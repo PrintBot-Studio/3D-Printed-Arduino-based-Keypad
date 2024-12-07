@@ -1,21 +1,29 @@
-#include <Keyboard.h>
-#include <KeyboardLayout.h>
+#define HID_CUSTOM_LAYOUT
+#define LAYOUT_US_ENGLISH
+#include <HID-Project.h>
+#include <HID-Settings.h>
 
 
-char KEY[7] = { NULL, NULL, 'A', 'B', 'C', 'D', 'E' };
+
 unsigned long lastTimeButtonStateChanged[7];
 unsigned long debounceDuration = 300;
 
+
+
+#define volumePin A0
+uint8_t prevVolume = 0; 
+unsigned long lastVolumeUpdatedTime = millis();
+
+
 void setup() {
   Serial.begin(9600);
-  Keyboard.begin();
+  NKROKeyboard.begin();
 
   for (byte pinNum = 2; pinNum <= 6; pinNum++) {
     pinMode(pinNum, INPUT);
     lastTimeButtonStateChanged[pinNum] = millis();
   }
 }
-
 
 
 void keyMap(uint8_t mappedButton, uint8_t n, ...) {
@@ -29,7 +37,7 @@ void keyMap(uint8_t mappedButton, uint8_t n, ...) {
 
     for (uint8_t i = 0; i < n; i++) {
       uint8_t key = va_arg(args, int);
-      Keyboard.press(key);
+      NKROKeyboard.press(KeyboardKeycode(key));
     }
 
     delay(10);
@@ -37,12 +45,13 @@ void keyMap(uint8_t mappedButton, uint8_t n, ...) {
     va_start(args, n);
     for (uint8_t i = 0; i < n; i++) {
       uint8_t key = va_arg(args, int);
-      Keyboard.release(key);
+      NKROKeyboard.release(KeyboardKeycode(key));
     }
 
     va_end(args);
   }
 }
+
 
 
 void loop() {
@@ -52,5 +61,5 @@ void loop() {
   keyMap(4, 2, KEY_LEFT_GUI, KEY_TAB);
   keyMap(5, 1, KEY_RETURN);
 
-  Serial.println(digitalRead(4));
+  // Serial.println(digitalRead(4));
 }
