@@ -13,7 +13,6 @@ void setup() {
   pinMode(LIGHT_PIN, OUTPUT);
   pinMode(PUSH_BUTTON_PIN, INPUT);
   pinMode(POTENSIO_ALOG_METER, INPUT);
-  Serial.begin(9600);
   lastButtonState = digitalRead(PUSH_BUTTON_PIN);
 }
 
@@ -36,7 +35,7 @@ void loop() {
       Serial.println(buttonState);
     }
   }
-  Serial.println(potensioInputVal);
+
   analogWrite(LIGHT_PIN, ledState == HIGH ? potensioInputVal / (1023 / 255) : 0);
   delay(50);
 
