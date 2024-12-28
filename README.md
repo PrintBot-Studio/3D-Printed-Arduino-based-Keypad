@@ -1,1 +1,1 @@
-# Project 1 F16 Viper Throttle and Keypad
+# Project 1: F16 Viper Throttle and Keypad
