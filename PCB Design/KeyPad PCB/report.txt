@@ -1,0 +1,276 @@
+Info: Processing symbol 'D1:ScottoKeebs_Components:Resistor_0805'.
+Info: Processing symbol 'D5:ScottoKeebs_Components:Resistor_0805'.
+Info: Processing symbol 'D2:ScottoKeebs_Components:Resistor_0805'.
+Info: Processing symbol 'D9:ScottoKeebs_Components:Resistor_0805'.
+Info: Processing symbol 'D3:ScottoKeebs_Components:Resistor_0805'.
+Info: Processing symbol 'D8:ScottoKeebs_Components:Resistor_0805'.
+Info: Processing symbol 'S1:ScottoKeebs_MX:MX_PCB_1.00u'.
+Info: Processing symbol 'S2:ScottoKeebs_MX:MX_PCB_1.00u'.
+Info: Processing symbol 'D4:ScottoKeebs_Components:Resistor_0805'.
+Info: Processing symbol 'D7:ScottoKeebs_Components:Resistor_0805'.
+Info: Processing symbol 'D6:ScottoKeebs_Components:Resistor_0805'.
+Info: Processing symbol 'D10:ScottoKeebs_Components:Resistor_0805'.
+Info: Processing symbol 'S3:ScottoKeebs_MX:MX_PCB_1.00u'.
+Info: Processing symbol 'S4:ScottoKeebs_MX:MX_PCB_1.00u'.
+Info: Processing symbol 'S5:ScottoKeebs_MX:MX_PCB_1.00u'.
+Info: Processing symbol 'S6:ScottoKeebs_MX:MX_PCB_1.00u'.
+Info: Processing symbol 'S7:ScottoKeebs_MX:MX_PCB_1.00u'.
+Info: Processing symbol 'S8:ScottoKeebs_MX:MX_PCB_1.00u'.
+Info: Processing symbol 'S9:ScottoKeebs_MX:MX_PCB_1.00u'.
+Info: Processing symbol 'S10:ScottoKeebs_MX:MX_PCB_1.00u'.
+Info: Processing symbol 'U1:ScottoKeebs_MCU:Arduino_Pro_Micro'.
+Connected D1 pin 1 to Row 0.
+Add net Net-(D1-A).
+Connected D1 pin 2 to Net-(D1-A).
+Added D2 (footprint 'ScottoKeebs_Components:Resistor_0805').
+Changed REF** reference designator to D2.
+Changed D2 value from Resistor_0805 to US2AA.
+Updated D2 symbol association from  to /74e7f319-7703-4450-b0de-ef977a42b28f.
+Updated D2 fields.
+Updated D2 sheetname to 'Root'.
+Updated D2 sheetfile to 'KeyPad PCB.kicad_sch'.
+Updated D2 footprint filters to 'D*SMA*'.
+Add net Net-(D2-A).
+Connected D2 pin 2 to Net-(D2-A).
+Connected D2 pin 1 to Row 0.
+Added D3 (footprint 'ScottoKeebs_Components:Resistor_0805').
+Changed REF** reference designator to D3.
+Changed D3 value from Resistor_0805 to US2AA.
+Updated D3 symbol association from  to /a36b0f0c-9f68-4a83-931c-6dd1ac7ec77d.
+Updated D3 fields.
+Updated D3 sheetname to 'Root'.
+Updated D3 sheetfile to 'KeyPad PCB.kicad_sch'.
+Updated D3 footprint filters to 'D*SMA*'.
+Add net Row 1.
+Connected D3 pin 1 to Row 1.
+Add net Net-(D3-A).
+Connected D3 pin 2 to Net-(D3-A).
+Added D4 (footprint 'ScottoKeebs_Components:Resistor_0805').
+Changed REF** reference designator to D4.
+Changed D4 value from Resistor_0805 to US2AA.
+Updated D4 symbol association from  to /aa48bf6f-fe27-4ac0-ac98-128ca71bdcfb.
+Updated D4 fields.
+Updated D4 sheetname to 'Root'.
+Updated D4 sheetfile to 'KeyPad PCB.kicad_sch'.
+Updated D4 footprint filters to 'D*SMA*'.
+Add net Net-(D4-A).
+Connected D4 pin 2 to Net-(D4-A).
+Connected D4 pin 1 to Row 1.
+Added D5 (footprint 'ScottoKeebs_Components:Resistor_0805').
+Changed REF** reference designator to D5.
+Changed D5 value from Resistor_0805 to US2AA.
+Updated D5 symbol association from  to /39a2d50d-e551-4296-a2e3-343bd829a524.
+Updated D5 fields.
+Updated D5 sheetname to 'Root'.
+Updated D5 sheetfile to 'KeyPad PCB.kicad_sch'.
+Updated D5 footprint filters to 'D*SMA*'.
+Add net Net-(D5-A).
+Connected D5 pin 2 to Net-(D5-A).
+Add net Row 2.
+Connected D5 pin 1 to Row 2.
+Added D6 (footprint 'ScottoKeebs_Components:Resistor_0805').
+Changed REF** reference designator to D6.
+Changed D6 value from Resistor_0805 to US2AA.
+Updated D6 symbol association from  to /1494b3ac-1846-44a1-a970-fc26a5a0a5a5.
+Updated D6 fields.
+Updated D6 sheetname to 'Root'.
+Updated D6 sheetfile to 'KeyPad PCB.kicad_sch'.
+Updated D6 footprint filters to 'D*SMA*'.
+Connected D6 pin 1 to Row 2.
+Add net Net-(D6-A).
+Connected D6 pin 2 to Net-(D6-A).
+Added D7 (footprint 'ScottoKeebs_Components:Resistor_0805').
+Changed REF** reference designator to D7.
+Changed D7 value from Resistor_0805 to US2AA.
+Updated D7 symbol association from  to /aac0bd30-1fb9-48f1-af64-645ddf721c5c.
+Updated D7 fields.
+Updated D7 sheetname to 'Root'.
+Updated D7 sheetfile to 'KeyPad PCB.kicad_sch'.
+Updated D7 footprint filters to 'D*SMA*'.
+Add net Net-(D7-A).
+Connected D7 pin 2 to Net-(D7-A).
+Add net Row 3.
+Connected D7 pin 1 to Row 3.
+Added D8 (footprint 'ScottoKeebs_Components:Resistor_0805').
+Changed REF** reference designator to D8.
+Changed D8 value from Resistor_0805 to US2AA.
+Updated D8 symbol association from  to /854a960e-d19e-404a-a05d-969722f72c76.
+Updated D8 fields.
+Updated D8 sheetname to 'Root'.
+Updated D8 sheetfile to 'KeyPad PCB.kicad_sch'.
+Updated D8 footprint filters to 'D*SMA*'.
+Connected D8 pin 1 to Row 3.
+Add net Net-(D8-A).
+Connected D8 pin 2 to Net-(D8-A).
+Added D9 (footprint 'ScottoKeebs_Components:Resistor_0805').
+Changed D9 value from Resistor_0805 to US2AA.
+Updated D9 symbol association from  to /fa238311-0801-4f7b-b9ee-878882cd665b.
+Updated D9 fields.
+Updated D9 sheetname to 'Root'.
+Updated D9 sheetfile to 'KeyPad PCB.kicad_sch'.
+Updated D9 footprint filters to 'D*SMA*'.
+Add net Net-(D9-A).
+Connected D9 pin 2 to Net-(D9-A).
+Add net Row 4.
+Connected D9 pin 1 to Row 4.
+Added D10 (footprint 'ScottoKeebs_Components:Resistor_0805').
+Changed REF** reference designator to D10.
+Changed D10 value from Resistor_0805 to US2AA.
+Updated D10 symbol association from  to /5a62b31d-bdda-41b0-b7f2-46846f88c6fc.
+Updated D10 fields.
+Updated D10 sheetname to 'Root'.
+Updated D10 sheetfile to 'KeyPad PCB.kicad_sch'.
+Updated D10 footprint filters to 'D*SMA*'.
+Add net Net-(D10-A).
+Connected D10 pin 2 to Net-(D10-A).
+Connected D10 pin 1 to Row 4.
+Added S1 (footprint 'ScottoKeebs_MX:MX_PCB_1.00u').
+Changed REF** reference designator to S1.
+Changed S1 value from MX_PCB_1.00u to Keyswitch.
+Updated S1 symbol association from  to /eff3c452-cd00-47a6-8a56-3b2c8e1000b7.
+Updated S1 fields.
+Updated S1 sheetname to 'Root'.
+Updated S1 sheetfile to 'KeyPad PCB.kicad_sch'.
+Connected S1 pin 2 to Net-(D1-A).
+Add net Col 0.
+Connected S1 pin 1 to Col 0.
+Changed REF** reference designator to D9.
+Added S2 (footprint 'ScottoKeebs_MX:MX_PCB_1.00u').
+Changed REF** reference designator to S2.
+Changed S2 value from MX_PCB_1.00u to Keyswitch.
+Updated S2 symbol association from  to /b03295b1-352a-45bd-b4d5-481d77ba4852.
+Updated S2 fields.
+Updated S2 sheetname to 'Root'.
+Updated S2 sheetfile to 'KeyPad PCB.kicad_sch'.
+Add net col 1.
+Connected S2 pin 1 to col 1.
+Connected S2 pin 2 to Net-(D2-A).
+Added D1 (footprint 'ScottoKeebs_Components:Resistor_0805').
+Added S3 (footprint 'ScottoKeebs_MX:MX_PCB_1.00u').
+Changed REF** reference designator to S3.
+Changed S3 value from MX_PCB_1.00u to Keyswitch.
+Updated S3 symbol association from  to /86ad225e-bc00-4d7d-8c63-45f449156fd5.
+Updated S3 fields.
+Updated S3 sheetname to 'Root'.
+Updated S3 sheetfile to 'KeyPad PCB.kicad_sch'.
+Connected S3 pin 1 to Col 0.
+Connected S3 pin 2 to Net-(D3-A).
+Changed REF** reference designator to D1.
+Added S4 (footprint 'ScottoKeebs_MX:MX_PCB_1.00u').
+Changed REF** reference designator to S4.
+Changed S4 value from MX_PCB_1.00u to Keyswitch.
+Updated S4 symbol association from  to /286e831e-efd2-4046-9d51-47307bca47a5.
+Updated S4 fields.
+Updated S4 sheetname to 'Root'.
+Updated S4 sheetfile to 'KeyPad PCB.kicad_sch'.
+Connected S4 pin 1 to col 1.
+Connected S4 pin 2 to Net-(D4-A).
+Changed D1 value from Resistor_0805 to US2AA.
+Added S5 (footprint 'ScottoKeebs_MX:MX_PCB_1.00u').
+Changed REF** reference designator to S5.
+Changed S5 value from MX_PCB_1.00u to Keyswitch.
+Updated S5 symbol association from  to /b9899556-9bae-4817-834c-cb2f5a32df68.
+Updated S5 fields.
+Updated S5 sheetname to 'Root'.
+Updated S5 sheetfile to 'KeyPad PCB.kicad_sch'.
+Connected S5 pin 2 to Net-(D5-A).
+Connected S5 pin 1 to Col 0.
+Updated D1 symbol association from  to /8210427a-d793-4024-b5e0-887e3020255b.
+Added S6 (footprint 'ScottoKeebs_MX:MX_PCB_1.00u').
+Changed REF** reference designator to S6.
+Changed S6 value from MX_PCB_1.00u to Keyswitch.
+Updated S6 symbol association from  to /70490dde-eaab-4bb5-bd0b-fd6454207c7d.
+Updated S6 fields.
+Updated S6 sheetname to 'Root'.
+Updated S6 sheetfile to 'KeyPad PCB.kicad_sch'.
+Connected S6 pin 1 to col 1.
+Connected S6 pin 2 to Net-(D6-A).
+Updated D1 fields.
+Added S7 (footprint 'ScottoKeebs_MX:MX_PCB_1.00u').
+Changed REF** reference designator to S7.
+Changed S7 value from MX_PCB_1.00u to Keyswitch.
+Updated S7 symbol association from  to /ff3cf7a9-d26b-4fff-88e8-9ddcfce24572.
+Updated S7 fields.
+Updated S7 sheetname to 'Root'.
+Updated S7 sheetfile to 'KeyPad PCB.kicad_sch'.
+Connected S7 pin 1 to Col 0.
+Connected S7 pin 2 to Net-(D7-A).
+Updated D1 sheetname to 'Root'.
+Added S8 (footprint 'ScottoKeebs_MX:MX_PCB_1.00u').
+Changed REF** reference designator to S8.
+Changed S8 value from MX_PCB_1.00u to Keyswitch.
+Updated S8 symbol association from  to /96fcc496-d8c1-48c4-bd36-0d3a5fb188d1.
+Updated S8 fields.
+Updated S8 sheetname to 'Root'.
+Updated S8 sheetfile to 'KeyPad PCB.kicad_sch'.
+Connected S8 pin 2 to Net-(D8-A).
+Connected S8 pin 1 to col 1.
+Updated D1 sheetfile to 'KeyPad PCB.kicad_sch'.
+Added S9 (footprint 'ScottoKeebs_MX:MX_PCB_1.00u').
+Changed REF** reference designator to S9.
+Changed S9 value from MX_PCB_1.00u to Keyswitch.
+Updated S9 symbol association from  to /8bf999ec-7d19-4714-bc34-e752b1b52e94.
+Updated S9 fields.
+Updated S9 sheetname to 'Root'.
+Updated S9 sheetfile to 'KeyPad PCB.kicad_sch'.
+Connected S9 pin 1 to Col 0.
+Connected S9 pin 2 to Net-(D9-A).
+Updated D1 footprint filters to 'D*SMA*'.
+Added S10 (footprint 'ScottoKeebs_MX:MX_PCB_1.00u').
+Changed REF** reference designator to S10.
+Changed S10 value from MX_PCB_1.00u to Keyswitch.
+Updated S10 symbol association from  to /d4038d57-09fa-447a-8d1b-d48531410829.
+Updated S10 fields.
+Updated S10 sheetname to 'Root'.
+Updated S10 sheetfile to 'KeyPad PCB.kicad_sch'.
+Connected S10 pin 1 to col 1.
+Connected S10 pin 2 to Net-(D10-A).
+Add net Row 0.
+Added U1 (footprint 'ScottoKeebs_MCU:Arduino_Pro_Micro').
+Updated U1 symbol association from  to /82421c3b-14de-464c-9b9c-e4cc4e1335b7.
+Updated U1 sheetname to 'Root'.
+Updated U1 sheetfile to 'KeyPad PCB.kicad_sch'.
+Connected U1 pin 9 to Row 4.
+Add net unconnected-(U1-A1/PF6-Pad18).
+Connected U1 pin 18 to unconnected-(U1-A1/PF6-Pad18).
+Add net unconnected-(U1-16/PB2-Pad14).
+Connected U1 pin 14 to unconnected-(U1-16/PB2-Pad14).
+Add net unconnected-(U1-A0/PF7-Pad17).
+Connected U1 pin 17 to unconnected-(U1-A0/PF7-Pad17).
+Add net unconnected-(U1-10/PB6-Pad13).
+Connected U1 pin 13 to unconnected-(U1-10/PB6-Pad13).
+Add net unconnected-(U1-RAW-Pad24).
+Connected U1 pin 24 to unconnected-(U1-RAW-Pad24).
+Connected U1 pin 11 to Row 0.
+Add net unconnected-(U1-GND-Pad3).
+Connected U1 pin 3 to unconnected-(U1-GND-Pad3).
+Add net unconnected-(U1-15/PB1-Pad16).
+Connected U1 pin 16 to unconnected-(U1-15/PB1-Pad16).
+Connected U1 pin 8 to Row 2.
+Connected U1 pin 6 to Col 0.
+Add net unconnected-(U1-RX1/PD2-Pad2).
+Connected U1 pin 2 to unconnected-(U1-RX1/PD2-Pad2).
+Connected U1 pin 5 to col 1.
+Add net unconnected-(U1-VCC-Pad21).
+Connected U1 pin 21 to unconnected-(U1-VCC-Pad21).
+Add net unconnected-(U1-14/PB3-Pad15).
+Connected U1 pin 15 to unconnected-(U1-14/PB3-Pad15).
+Add net unconnected-(U1-A3/PF4-Pad20).
+Connected U1 pin 20 to unconnected-(U1-A3/PF4-Pad20).
+Add net unconnected-(U1-GND-Pad4).
+Connected U1 pin 4 to unconnected-(U1-GND-Pad4).
+Add net unconnected-(U1-A2/PF5-Pad19).
+Connected U1 pin 19 to unconnected-(U1-A2/PF5-Pad19).
+Add net unconnected-(U1-9/PB5-Pad12).
+Connected U1 pin 12 to unconnected-(U1-9/PB5-Pad12).
+Connected U1 pin 10 to Row 1.
+Connected U1 pin 7 to Row 3.
+Add net unconnected-(U1-GND-Pad23).
+Connected U1 pin 23 to unconnected-(U1-GND-Pad23).
+Add net unconnected-(U1-RST-Pad22).
+Connected U1 pin 22 to unconnected-(U1-RST-Pad22).
+Add net unconnected-(U1-TX0/PD3-Pad1).
+Connected U1 pin 1 to unconnected-(U1-TX0/PD3-Pad1).
+
+
+Info: Total warnings: 0, errors: 0.

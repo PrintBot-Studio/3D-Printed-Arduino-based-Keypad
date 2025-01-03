@@ -5,40 +5,30 @@
 	(uuid "38a95c96-9ce7-419e-896e-62aea4c2a871")
 	(paper "A4")
 	(lib_symbols
-		(symbol "MCU_Module:Arduino_Nano_v2.x"
+		(symbol "Diode:US2AA"
+			(pin_numbers hide)
+			(pin_names hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "A"
-				(at -10.16 23.495 0)
+			(property "Reference" "D"
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Value" "Arduino_Nano_v2.x"
-				(at 5.08 -24.13 0)
+			(property "Value" "US2AA"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
-			(property "Footprint" "Module:Arduino_Nano"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.arduino.cc/en/uploads/Main/ArduinoNanoManual23.pdf"
-				(at 0 0 0)
+			(property "Footprint" "Diode_SMD:D_SMA"
+				(at 0 -4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -46,7 +36,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Arduino Nano v2.x"
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/US2AA-D.PDF"
 				(at 0 0 0)
 				(effects
 					(font
@@ -55,7 +45,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Arduino nano microcontroller module USB"
+			(property "Description" "50V, 1.5A, General Purpose Rectifier Diode, SMA(DO-214AC)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -64,7 +54,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Arduino*Nano*"
+			(property "Sim.Device" "D"
 				(at 0 0 0)
 				(effects
 					(font
@@ -73,24 +63,76 @@
 					(hide yes)
 				)
 			)
-			(symbol "Arduino_Nano_v2.x_0_1"
-				(rectangle
-					(start -10.16 22.86)
-					(end 10.16 -22.86)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Super Fast"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SMA*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "US2AA_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
-			(symbol "Arduino_Nano_v2.x_1_1"
-				(pin bidirectional line
-					(at -12.7 12.7 0)
+			(symbol "US2AA_1_1"
+				(pin passive line
+					(at -3.81 0 0)
 					(length 2.54)
-					(name "D1/TX"
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -105,10 +147,112 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -12.7 -2.54 0)
+				(pin passive line
+					(at 3.81 0 180)
 					(length 2.54)
-					(name "D7"
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "ScottoKeebs:MCU_Arduino_Pro_Micro"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "Arduino_Pro_Micro"
+				(at 0 -19.05 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "ScottoKeebs_MCU:Arduino_Pro_Micro"
+				(at 0 -22.86 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 26.67 -63.5 90)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MCU_Arduino_Pro_Micro_0_1"
+				(rectangle
+					(start -10.16 16.51)
+					(end 10.16 -16.51)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MCU_Arduino_Pro_Micro_1_1"
+				(pin input line
+					(at -15.24 13.97 0)
+					(length 5.08)
+					(name "TX0/PD3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -8.89 0)
+					(length 5.08)
+					(name "7/PE6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -123,10 +267,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -12.7 -5.08 0)
-					(length 2.54)
-					(name "D8"
+				(pin input line
+					(at -15.24 -11.43 0)
+					(length 5.08)
+					(name "8/PB4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -141,10 +285,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -12.7 -7.62 0)
-					(length 2.54)
-					(name "D9"
+				(pin input line
+					(at -15.24 -13.97 0)
+					(length 5.08)
+					(name "9/PB5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -159,10 +303,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -12.7 -10.16 0)
-					(length 2.54)
-					(name "D10"
+				(pin input line
+					(at 15.24 -13.97 180)
+					(length 5.08)
+					(name "10/PB6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -177,10 +321,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -12.7 -12.7 0)
-					(length 2.54)
-					(name "D11"
+				(pin input line
+					(at 15.24 -11.43 180)
+					(length 5.08)
+					(name "16/PB2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -195,10 +339,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -12.7 -15.24 0)
-					(length 2.54)
-					(name "D12"
+				(pin input line
+					(at 15.24 -8.89 180)
+					(length 5.08)
+					(name "14/PB3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -213,10 +357,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -12.7 -17.78 0)
-					(length 2.54)
-					(name "D13"
+				(pin input line
+					(at 15.24 -6.35 180)
+					(length 5.08)
+					(name "15/PB1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -231,10 +375,10 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 2.54 25.4 270)
-					(length 2.54)
-					(name "3V3"
+				(pin input line
+					(at 15.24 -3.81 180)
+					(length 5.08)
+					(name "A0/PF7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -250,9 +394,9 @@
 					)
 				)
 				(pin input line
-					(at 12.7 5.08 180)
-					(length 2.54)
-					(name "AREF"
+					(at 15.24 -1.27 180)
+					(length 5.08)
+					(name "A1/PF6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -267,10 +411,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 12.7 0 180)
-					(length 2.54)
-					(name "A0"
+				(pin input line
+					(at 15.24 1.27 180)
+					(length 5.08)
+					(name "A2/PF5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -285,10 +429,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -12.7 15.24 0)
-					(length 2.54)
-					(name "D0/RX"
+				(pin input line
+					(at -15.24 11.43 0)
+					(length 5.08)
+					(name "RX1/PD2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -303,10 +447,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 12.7 -2.54 180)
-					(length 2.54)
-					(name "A1"
+				(pin input line
+					(at 15.24 3.81 180)
+					(length 5.08)
+					(name "A3/PF4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -321,10 +465,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 12.7 -5.08 180)
-					(length 2.54)
-					(name "A2"
+				(pin input line
+					(at 15.24 6.35 180)
+					(length 5.08)
+					(name "VCC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -339,10 +483,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 12.7 -7.62 180)
-					(length 2.54)
-					(name "A3"
+				(pin input line
+					(at 15.24 8.89 180)
+					(length 5.08)
+					(name "RST"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -357,10 +501,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 12.7 -10.16 180)
-					(length 2.54)
-					(name "A4"
+				(pin input line
+					(at 15.24 11.43 180)
+					(length 5.08)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -375,10 +519,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 12.7 -12.7 180)
-					(length 2.54)
-					(name "A5"
+				(pin input line
+					(at 15.24 13.97 180)
+					(length 5.08)
+					(name "RAW"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -393,100 +537,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 12.7 -15.24 180)
-					(length 2.54)
-					(name "A6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -17.78 180)
-					(length 2.54)
-					(name "A7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "26"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 5.08 25.4 270)
-					(length 2.54)
-					(name "+5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "27"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
-					(at 12.7 15.24 180)
-					(length 2.54)
-					(name "~{RESET}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "28"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 -25.4 90)
-					(length 2.54)
+					(at -15.24 8.89 0)
+					(length 5.08)
 					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "29"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 12.7 12.7 180)
-					(length 2.54)
-					(name "~{RESET}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -501,27 +555,9 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -2.54 25.4 270)
-					(length 2.54)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "30"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -25.4 90)
-					(length 2.54)
+				(pin input line
+					(at -15.24 6.35 0)
+					(length 5.08)
 					(name "GND"
 						(effects
 							(font
@@ -537,10 +573,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -12.7 10.16 0)
-					(length 2.54)
-					(name "D2"
+				(pin input line
+					(at -15.24 3.81 0)
+					(length 5.08)
+					(name "2/PD1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -555,10 +591,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -12.7 7.62 0)
-					(length 2.54)
-					(name "D3"
+				(pin input line
+					(at -15.24 1.27 0)
+					(length 5.08)
+					(name "3/PD0"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -573,10 +609,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -12.7 5.08 0)
-					(length 2.54)
-					(name "D4"
+				(pin input line
+					(at -15.24 -1.27 0)
+					(length 5.08)
+					(name "4/PD4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -591,10 +627,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -12.7 2.54 0)
-					(length 2.54)
-					(name "D5"
+				(pin input line
+					(at -15.24 -3.81 0)
+					(length 5.08)
+					(name "5/PC6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -609,10 +645,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -12.7 0 0)
-					(length 2.54)
-					(name "D6"
+				(pin input line
+					(at -15.24 -6.35 0)
+					(length 5.08)
+					(name "6/PD7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -629,25 +665,24 @@
 				)
 			)
 		)
-		(symbol "power:+3.3V"
-			(power)
+		(symbol "ScottoKeebs:Placeholder_Keyswitch"
 			(pin_numbers hide)
 			(pin_names
-				(offset 0) hide)
+				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
+			(property "Reference" "S"
+				(at 3.048 1.016 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
+					(justify left)
 				)
 			)
-			(property "Value" "+3.3V"
-				(at 0 3.556 0)
+			(property "Value" "Keyswitch"
+				(at 0 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -663,7 +698,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -672,7 +707,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(property "Description" "Push button switch, normally open, two pins, 45° tilted"
 				(at 0 0 0)
 				(effects
 					(font
@@ -681,7 +716,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
 				(at 0 0 0)
 				(effects
 					(font
@@ -690,10 +725,21 @@
 					(hide yes)
 				)
 			)
-			(symbol "+3.3V_0_1"
+			(symbol "Placeholder_Keyswitch_0_1"
+				(circle
+					(center -1.1684 1.1684)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
+						(xy -0.508 2.54) (xy 2.54 -0.508)
 					)
 					(stroke
 						(width 0)
@@ -705,7 +751,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 1.016 1.016) (xy 2.032 2.032)
 					)
 					(stroke
 						(width 0)
@@ -717,7 +763,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy -2.54 2.54) (xy -1.524 1.524) (xy -1.524 1.524)
 					)
 					(stroke
 						(width 0)
@@ -727,12 +773,33 @@
 						(type none)
 					)
 				)
-			)
-			(symbol "+3.3V_1_1"
-				(pin power_in line
-					(at 0 0 90)
+				(polyline
+					(pts
+						(xy 1.524 -1.524) (xy 2.54 -2.54) (xy 2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.143 -1.1938)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 2.54 0)
 					(length 0)
-					(name "~"
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -747,49 +814,563 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 2.54 -2.54 180)
+					(length 0)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 114.3 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "062fa2cf-39f7-4b33-a2a5-9812662a9f9b")
+	)
+	(junction
+		(at 114.3 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1035ed6b-b3c5-46f1-a831-ca57b2abae31")
+	)
+	(junction
+		(at 99.06 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "119c236d-d89e-436e-9164-a5439f959b28")
+	)
+	(junction
+		(at 99.06 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "186025ae-3c3a-4146-a61b-792447daf8c8")
+	)
+	(junction
+		(at 114.3 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a69b311c-0cbc-4fe6-869a-ea2b19c135fb")
+	)
+	(junction
+		(at 99.06 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a90507ae-1f51-4cf1-bb8b-9f7539684077")
+	)
+	(junction
+		(at 99.06 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4f3b239-b288-4b65-923b-0ba03f1b53c6")
+	)
+	(junction
+		(at 114.3 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f0340878-98c4-4e78-bd8c-619729867325")
+	)
+	(wire
+		(pts
+			(xy 114.3 82.55) (xy 114.3 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06835c55-85d1-4b9b-b057-c663c3749553")
+	)
+	(wire
+		(pts
+			(xy 104.14 74.93) (xy 119.38 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07076618-c3ac-47e4-960f-538866d1d580")
+	)
+	(wire
+		(pts
+			(xy 99.06 31.75) (xy 99.06 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "296d58a4-a6c9-4b48-a472-e32731ef35fe")
+	)
+	(wire
+		(pts
+			(xy 99.06 40.64) (xy 99.06 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4080de5a-1b66-47c2-9700-9cacb416cfc4")
+	)
+	(wire
+		(pts
+			(xy 104.14 135.89) (xy 119.38 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f6ea46a-211d-405f-bd9f-bc68f5eab7cf")
+	)
+	(wire
+		(pts
+			(xy 114.3 31.75) (xy 114.3 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54fdd97e-c7e1-4171-9d35-7cc1a05908d2")
+	)
+	(wire
+		(pts
+			(xy 104.14 53.34) (xy 119.38 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65655e90-9fe4-4060-a923-ea2100333693")
+	)
+	(wire
+		(pts
+			(xy 104.14 95.25) (xy 119.38 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b28cf76-3672-4707-a821-4c8adf3e0005")
+	)
+	(wire
+		(pts
+			(xy 104.14 115.57) (xy 119.38 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "955d8720-c394-4df1-bb04-343e0141e52f")
+	)
+	(wire
+		(pts
+			(xy 99.06 62.23) (xy 99.06 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bba44eab-6756-4a92-aa0e-c83cdd1bf119")
+	)
+	(wire
+		(pts
+			(xy 114.3 62.23) (xy 114.3 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c291e3c3-bc5e-4d3a-9f29-23a29cbbda93")
+	)
+	(wire
+		(pts
+			(xy 114.3 40.64) (xy 114.3 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2b3380e-bcb0-4197-af4f-795bb5d9ba9d")
+	)
+	(wire
+		(pts
+			(xy 99.06 82.55) (xy 99.06 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecf5f3ca-bec0-44cc-81c9-8413b18dcf9f")
+	)
+	(wire
+		(pts
+			(xy 114.3 102.87) (xy 114.3 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f188489d-9bb9-4bf3-b37a-7ca99dd7ec25")
+	)
+	(wire
+		(pts
+			(xy 99.06 102.87) (xy 99.06 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f644e68b-1d49-4345-8fb3-25c693ad217f")
+	)
+	(global_label "Row 3"
+		(shape input)
+		(at 31.75 74.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "11926434-ca5f-4723-bebc-b75fc53e7a30")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 22.8382 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row 1"
+		(shape input)
+		(at 119.38 74.93 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "142610da-cb40-40cf-b197-494b2c041ce7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.2918 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row 4"
+		(shape input)
+		(at 119.38 135.89 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1dfced7f-c7ba-4201-b0ba-5760c11e16bd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.2918 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Col 0"
+		(shape input)
+		(at 99.06 31.75 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "40f191ee-fc18-4bc9-89ea-68c8665b1087")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 99.06 23.5035 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row 2"
+		(shape input)
+		(at 31.75 77.47 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4d97d11a-85c3-48da-914a-de9a94641607")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 22.8382 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row 2"
+		(shape input)
+		(at 119.38 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6c61082f-969b-43e1-9fd0-b51ef7b46d4c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.2918 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "col 1"
+		(shape input)
+		(at 31.75 69.85 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "97e051b4-f759-46ef-98d7-30f4b1242fcf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 23.6849 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row 0"
+		(shape input)
+		(at 119.38 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a496cdd8-440a-4760-9836-9ec843477aa3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.2918 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row 0"
+		(shape input)
+		(at 31.75 85.09 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c0c304fd-129d-404a-ae89-fea24b025c7b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 22.8382 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "col 1"
+		(shape input)
+		(at 114.3 31.75 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ce6b70f5-e67c-458d-acba-d7d908349f04")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 114.3 23.6849 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row 1"
+		(shape input)
+		(at 31.75 82.55 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d0b34a33-6c41-486a-a3ef-7439ef7e0d29")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 22.8382 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row 4"
+		(shape input)
+		(at 31.75 80.01 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "de91ac1e-587c-4d2d-8d66-2bcf80a81e48")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 22.8382 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Row 3"
+		(shape input)
+		(at 119.38 115.57 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e2b35864-04b8-485b-8f34-3ee9012c2c85")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.2918 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Col 0"
+		(shape input)
+		(at 31.75 72.39 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f6bb0d64-d60f-4564-bee3-6cd7e96fb398")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 23.5035 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
 			)
 		)
 	)
 	(symbol
-		(lib_id "MCU_Module:Arduino_Nano_v2.x")
-		(at 62.23 81.28 0)
+		(lib_id "Diode:US2AA")
+		(at 119.38 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "55498266-f872-4906-8e44-90220943f0ef")
-		(property "Reference" "A1"
-			(at 66.9641 106.68 0)
+		(uuid "1494b3ac-1846-44a1-a970-fc26a5a0a5a5")
+		(property "Reference" "D6"
+			(at 121.92 90.1699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "Arduino_Nano_v2.x"
-			(at 66.9641 109.22 0)
+		(property "Value" "US2AA"
+			(at 121.92 92.7099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Module:Arduino_Nano"
-			(at 62.23 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.arduino.cc/en/uploads/Main/ArduinoNanoManual23.pdf"
-			(at 62.23 81.28 0)
+		(property "Footprint" "ScottoKeebs_Components:Resistor_0805"
+			(at 123.825 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -797,8 +1378,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Arduino Nano v2.x"
-			(at 62.23 81.28 0)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/US2AA-D.PDF"
+			(at 119.38 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -806,117 +1387,700 @@
 				(hide yes)
 			)
 		)
-		(pin "26"
-			(uuid "21b2a069-8773-4855-98ee-c1fb6e046921")
+		(property "Description" "50V, 1.5A, General Purpose Rectifier Diode, SMA(DO-214AC)"
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "27"
-			(uuid "298b438a-718d-4631-8ee5-da421f0d732c")
+		(property "Sim.Device" "D"
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "14"
-			(uuid "534a3936-4b93-412b-909b-6a712594d204")
-		)
-		(pin "9"
-			(uuid "7f9913fa-3b4d-4372-956c-a25915547be4")
-		)
-		(pin "12"
-			(uuid "cbf9fafc-eac2-4812-962b-f2b18877575a")
-		)
-		(pin "28"
-			(uuid "f67b8b28-8f03-4d5b-9095-143b8f6fd78a")
-		)
-		(pin "1"
-			(uuid "86502029-9b98-48ce-ae71-d0e4a19e7193")
-		)
-		(pin "3"
-			(uuid "f2457e31-d0c8-48cd-90db-eccffc459c84")
-		)
-		(pin "4"
-			(uuid "e916d352-0603-4db0-9781-67add4165fd3")
-		)
-		(pin "13"
-			(uuid "0dbf4af8-d785-4f56-9eb7-ae6276d1a5f4")
-		)
-		(pin "25"
-			(uuid "5dcc81ed-d7c5-41af-89b9-8d5169492cf0")
-		)
-		(pin "7"
-			(uuid "d40bd2c0-d0a1-4a76-b226-45e7f8d25fca")
-		)
-		(pin "24"
-			(uuid "62d568f0-f429-48e4-91a1-6974ea920810")
-		)
-		(pin "17"
-			(uuid "bb4b620b-b10e-4fcb-9b35-e5ad0906f8d9")
-		)
-		(pin "29"
-			(uuid "dac436bf-8625-4239-b71d-12e532f39bdd")
-		)
-		(pin "30"
-			(uuid "72e9dc47-e2c3-4ca6-bd9c-7953f2a2622f")
-		)
-		(pin "5"
-			(uuid "d9f976a2-8ac3-4054-9cc8-ad7f1b79bf34")
-		)
-		(pin "16"
-			(uuid "d9041af3-ed5d-491b-afc3-340ce2cf1b75")
-		)
-		(pin "18"
-			(uuid "e1044a52-57cd-4c2a-9999-f7c4737d50f9")
+		(property "Sim.Pins" "1=K 2=A"
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "34a4eff0-60f2-45e3-8a5b-3d85a10927ea")
+			(uuid "5ec91c2e-1145-447f-a8d9-2b909ca927c1")
 		)
-		(pin "11"
-			(uuid "22665e86-09d4-44dc-bf9d-dbbbe0ad9f6d")
+		(pin "1"
+			(uuid "d7c14f26-27ca-4fd8-8893-1e07e56605f2")
 		)
-		(pin "20"
-			(uuid "d2b04453-ba49-4b25-b9b7-e68850f1b29b")
+		(instances
+			(project "KeyPad PCB"
+				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
+					(reference "D6")
+					(unit 1)
+				)
+			)
 		)
-		(pin "23"
-			(uuid "f54c05a6-c94f-491e-9499-189a67c83a8a")
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 116.84 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "286e831e-efd2-4046-9d51-47307bca47a5")
+		(property "Reference" "S4"
+			(at 116.84 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(pin "19"
-			(uuid "369c31a5-85d9-459c-8872-42af05935645")
+		(property "Value" "Keyswitch"
+			(at 116.84 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(pin "21"
-			(uuid "2eaa0221-fbac-4f30-b09c-0ac15e352b80")
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 116.84 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "6"
-			(uuid "b66364f8-17d5-4653-8a15-0f3aef746fa7")
+		(property "Datasheet" "~"
+			(at 116.84 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "22"
-			(uuid "3f57f926-37b5-4aa9-b06e-0adc77f90f24")
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 116.84 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "10"
-			(uuid "98bc6458-91a6-4881-a5a7-ecb0c0fcedd3")
+		(pin "1"
+			(uuid "576c1392-8270-4cb5-a95c-337a8c865c1d")
 		)
-		(pin "8"
-			(uuid "3b1c5558-3849-4894-9fcb-f3e78d1a9217")
+		(pin "2"
+			(uuid "9d0f31ec-2064-405d-a681-78f222be6bee")
+		)
+		(instances
+			(project "KeyPad PCB"
+				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
+					(reference "S4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:US2AA")
+		(at 104.14 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "39a2d50d-e551-4296-a2e3-343bd829a524")
+		(property "Reference" "D5"
+			(at 106.68 90.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "US2AA"
+			(at 106.68 92.7099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Resistor_0805"
+			(at 108.585 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/US2AA-D.PDF"
+			(at 104.14 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V, 1.5A, General Purpose Rectifier Diode, SMA(DO-214AC)"
+			(at 104.14 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 104.14 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 104.14 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "37b4f394-bf34-4d0d-af7e-1cebb0d6779b")
+		)
+		(pin "1"
+			(uuid "15053775-5974-4054-9919-ecdac5a1ad73")
+		)
+		(instances
+			(project "KeyPad PCB"
+				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:US2AA")
+		(at 119.38 132.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a62b31d-bdda-41b0-b7f2-46846f88c6fc")
+		(property "Reference" "D10"
+			(at 121.92 130.8099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "US2AA"
+			(at 121.92 133.3499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Resistor_0805"
+			(at 123.825 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/US2AA-D.PDF"
+			(at 119.38 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V, 1.5A, General Purpose Rectifier Diode, SMA(DO-214AC)"
+			(at 119.38 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 119.38 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 119.38 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "761eae8e-6129-432d-8a11-3eddeaa655fe")
+		)
+		(pin "1"
+			(uuid "d9dcad39-623d-41e7-917a-d5e7f6d94d14")
+		)
+		(instances
+			(project "KeyPad PCB"
+				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 116.84 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70490dde-eaab-4bb5-bd0b-fd6454207c7d")
+		(property "Reference" "S6"
+			(at 116.84 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 116.84 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 116.84 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 116.84 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "37d69df9-7557-49c5-a0ac-814190fd6ab7")
+		)
+		(pin "2"
+			(uuid "76caf4ce-db3d-47cb-8636-e96f4be63068")
+		)
+		(instances
+			(project "KeyPad PCB"
+				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
+					(reference "S6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:US2AA")
+		(at 119.38 49.53 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74e7f319-7703-4450-b0de-ef977a42b28f")
+		(property "Reference" "D2"
+			(at 121.92 48.2599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "US2AA"
+			(at 121.92 50.7999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Resistor_0805"
+			(at 123.825 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/US2AA-D.PDF"
+			(at 119.38 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V, 1.5A, General Purpose Rectifier Diode, SMA(DO-214AC)"
+			(at 119.38 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 119.38 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 119.38 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e7e998f0-a239-43bc-bc42-d032d151a599")
+		)
+		(pin "1"
+			(uuid "bed83515-50bd-4a19-8963-2ddcfdea3a30")
+		)
+		(instances
+			(project "KeyPad PCB"
+				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:US2AA")
+		(at 104.14 49.53 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8210427a-d793-4024-b5e0-887e3020255b")
+		(property "Reference" "D1"
+			(at 106.68 48.2599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "US2AA"
+			(at 106.68 50.7999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Resistor_0805"
+			(at 108.585 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/US2AA-D.PDF"
+			(at 104.14 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V, 1.5A, General Purpose Rectifier Diode, SMA(DO-214AC)"
+			(at 104.14 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 104.14 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 104.14 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "392722f7-437f-41fe-bf16-36b8077e694c")
+		)
+		(pin "1"
+			(uuid "7a766fd3-a72f-4049-b5eb-fe0866dcfe32")
+		)
+		(instances
+			(project ""
+				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:MCU_Arduino_Pro_Micro")
+		(at 46.99 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "82421c3b-14de-464c-9b9c-e4cc4e1335b7")
+		(property "Reference" "U1"
+			(at 46.99 52.07 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "Arduino_Pro_Micro"
+			(at 46.99 54.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_MCU:Arduino_Pro_Micro"
+			(at 46.99 96.52 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 137.16 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 46.99 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "15"
-			(uuid "d0f824e2-92f1-4e68-8222-53d700b0f3a3")
+			(uuid "bbca30b1-852e-4dff-86d8-1a5b71e37a94")
+		)
+		(pin "10"
+			(uuid "b4aeac92-2d5e-4c92-a57d-81c3bbe23888")
+		)
+		(pin "13"
+			(uuid "ff2e72d8-4c06-4102-99bd-c9d178ae2552")
+		)
+		(pin "12"
+			(uuid "5f3e553c-05f3-4300-b7a4-921bf2fbbc75")
+		)
+		(pin "14"
+			(uuid "b492d786-31ee-4cc4-ac6f-25cb5b423dc8")
+		)
+		(pin "1"
+			(uuid "7d688a77-d88f-4120-8e20-ad4f83b1a6a7")
+		)
+		(pin "24"
+			(uuid "14df2a4d-ecd1-49ad-9d93-0df2a02f1341")
+		)
+		(pin "6"
+			(uuid "60ce49b6-2074-4fbb-b70b-efefb4a7a14e")
+		)
+		(pin "8"
+			(uuid "aeb94933-5412-41c1-98ae-2952c4440aa5")
+		)
+		(pin "16"
+			(uuid "a6b7334d-d788-49f2-a10e-ff75d43ce2cd")
+		)
+		(pin "18"
+			(uuid "b56abf4d-85ac-4494-a318-91ee482446e2")
+		)
+		(pin "20"
+			(uuid "183c874e-fcd6-4805-b5f0-9d3a852161cb")
+		)
+		(pin "3"
+			(uuid "3eaaf16f-af1c-4a66-8615-1a25850ef955")
+		)
+		(pin "23"
+			(uuid "1b607853-843e-4927-8523-e272f6fbd708")
+		)
+		(pin "11"
+			(uuid "c6b9e4d4-0cf7-4d5b-98a4-b965d6a21085")
+		)
+		(pin "17"
+			(uuid "dcfcda08-3be2-44f4-b4c1-bcdd5b4cf47c")
+		)
+		(pin "2"
+			(uuid "18de0b11-566f-4dd7-be1f-a835138122a8")
+		)
+		(pin "21"
+			(uuid "c91eedcd-ac9b-4421-9fff-9d280d121281")
+		)
+		(pin "22"
+			(uuid "8abe4155-b89e-48b9-ba2c-71e8c87a6d2c")
+		)
+		(pin "9"
+			(uuid "cc93d16b-603f-41a5-9b5e-a546603ca826")
+		)
+		(pin "7"
+			(uuid "f9ba7629-1806-43dc-b3af-ce798f38fdae")
+		)
+		(pin "19"
+			(uuid "884adc64-4d70-40ed-8376-4ff993a0eb0e")
+		)
+		(pin "5"
+			(uuid "311dfedc-d174-4b4f-b490-1d2b1e3c7553")
+		)
+		(pin "4"
+			(uuid "21af3c1f-31d6-4add-b532-6b659d844b93")
 		)
 		(instances
 			(project ""
 				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
-					(reference "A1")
+					(reference "U1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 106.68 36.83 0)
+		(lib_id "Diode:US2AA")
+		(at 119.38 111.76 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5c85e52f-5edf-4214-9156-1d31fbec0051")
-		(property "Reference" "#PWR01"
-			(at 106.68 40.64 0)
+		(uuid "854a960e-d19e-404a-a05d-969722f72c76")
+		(property "Reference" "D8"
+			(at 121.92 110.4899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "US2AA"
+			(at 121.92 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Resistor_0805"
+			(at 123.825 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -924,16 +2088,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 106.68 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 106.68 36.83 0)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/US2AA-D.PDF"
+			(at 119.38 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -941,8 +2097,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 106.68 36.83 0)
+		(property "Description" "50V, 1.5A, General Purpose Rectifier Diode, SMA(DO-214AC)"
+			(at 119.38 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -950,8 +2106,85 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 106.68 36.83 0)
+		(property "Sim.Device" "D"
+			(at 119.38 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 119.38 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6b7144fa-132f-4fa1-a58a-93f3abc51d20")
+		)
+		(pin "1"
+			(uuid "35792f2f-7630-469a-ba63-7cfdef256dd7")
+		)
+		(instances
+			(project "KeyPad PCB"
+				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 101.6 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86ad225e-bc00-4d7d-8c63-45f449156fd5")
+		(property "Reference" "S3"
+			(at 101.6 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 101.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 101.6 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 101.6 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -960,29 +2193,48 @@
 			)
 		)
 		(pin "1"
-			(uuid "538749cc-5135-49fa-9b94-f802a8752133")
+			(uuid "175de37a-c355-478d-9d33-18788789788b")
+		)
+		(pin "2"
+			(uuid "c86d6af0-c364-46b5-b16d-f64cfc3959fa")
 		)
 		(instances
-			(project ""
+			(project "KeyPad PCB"
 				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
-					(reference "#PWR01")
+					(reference "S3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 64.77 54.61 0)
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 101.6 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "da3ea544-8fac-41bf-848e-d843dc399e97")
-		(property "Reference" "#PWR02"
-			(at 64.77 58.42 0)
+		(uuid "8bf999ec-7d19-4714-bc34-e752b1b52e94")
+		(property "Reference" "S9"
+			(at 101.6 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 101.6 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 101.6 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -990,16 +2242,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 64.77 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 64.77 54.61 0)
+		(property "Datasheet" "~"
+			(at 101.6 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1007,17 +2251,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 64.77 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 64.77 54.61 0)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 101.6 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1026,12 +2261,775 @@
 			)
 		)
 		(pin "1"
-			(uuid "c7ae98c7-80f8-474d-8c85-8b07ae80da5f")
+			(uuid "d37ed6e1-a56f-4968-b9b7-55924c9dc639")
+		)
+		(pin "2"
+			(uuid "6e506360-dfff-4900-ace9-761752461729")
+		)
+		(instances
+			(project "KeyPad PCB"
+				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
+					(reference "S9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 116.84 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96fcc496-d8c1-48c4-bd36-0d3a5fb188d1")
+		(property "Reference" "S8"
+			(at 116.84 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 116.84 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 116.84 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 116.84 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b8df2077-cd8d-452a-affb-2fbca5115622")
+		)
+		(pin "2"
+			(uuid "d76b6c3a-f4c3-4bd5-8417-1fa979a9ee4d")
+		)
+		(instances
+			(project "KeyPad PCB"
+				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
+					(reference "S8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:US2AA")
+		(at 104.14 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a36b0f0c-9f68-4a83-931c-6dd1ac7ec77d")
+		(property "Reference" "D3"
+			(at 106.68 69.8499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "US2AA"
+			(at 106.68 72.3899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Resistor_0805"
+			(at 108.585 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/US2AA-D.PDF"
+			(at 104.14 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V, 1.5A, General Purpose Rectifier Diode, SMA(DO-214AC)"
+			(at 104.14 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 104.14 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 104.14 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5058296d-de33-4742-8374-d4ea58cdf3b7")
+		)
+		(pin "1"
+			(uuid "edc382ff-1eaf-4365-8d1c-f2643a3aa446")
+		)
+		(instances
+			(project "KeyPad PCB"
+				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:US2AA")
+		(at 119.38 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa48bf6f-fe27-4ac0-ac98-128ca71bdcfb")
+		(property "Reference" "D4"
+			(at 121.92 69.8499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "US2AA"
+			(at 121.92 72.3899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Resistor_0805"
+			(at 123.825 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/US2AA-D.PDF"
+			(at 119.38 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V, 1.5A, General Purpose Rectifier Diode, SMA(DO-214AC)"
+			(at 119.38 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 119.38 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 119.38 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "35e0990d-3933-409c-a072-785c79d32c06")
+		)
+		(pin "1"
+			(uuid "4aa0982c-ed0a-43df-be6b-b22736e0da18")
+		)
+		(instances
+			(project "KeyPad PCB"
+				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:US2AA")
+		(at 104.14 111.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aac0bd30-1fb9-48f1-af64-645ddf721c5c")
+		(property "Reference" "D7"
+			(at 106.68 110.4899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "US2AA"
+			(at 106.68 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Resistor_0805"
+			(at 108.585 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/US2AA-D.PDF"
+			(at 104.14 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V, 1.5A, General Purpose Rectifier Diode, SMA(DO-214AC)"
+			(at 104.14 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 104.14 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 104.14 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a625acf5-b40e-482c-84de-7aeab8b72afa")
+		)
+		(pin "1"
+			(uuid "c4696976-d0ca-4a80-b4eb-d3f941c2f83e")
+		)
+		(instances
+			(project "KeyPad PCB"
+				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 116.84 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b03295b1-352a-45bd-b4d5-481d77ba4852")
+		(property "Reference" "S2"
+			(at 116.84 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 116.84 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 116.84 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 116.84 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4053f572-dac7-495d-b605-c585f162cdfc")
+		)
+		(pin "2"
+			(uuid "24579653-1911-4cf4-96a7-b615145006a5")
+		)
+		(instances
+			(project "KeyPad PCB"
+				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
+					(reference "S2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 101.6 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b9899556-9bae-4817-834c-cb2f5a32df68")
+		(property "Reference" "S5"
+			(at 101.6 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 101.6 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 101.6 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 101.6 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "64101a34-6b50-4aa0-a6a2-e023b99d25e2")
+		)
+		(pin "2"
+			(uuid "c53cf6bd-dfd6-45eb-95aa-d463426c8af2")
+		)
+		(instances
+			(project "KeyPad PCB"
+				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
+					(reference "S5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 116.84 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d4038d57-09fa-447a-8d1b-d48531410829")
+		(property "Reference" "S10"
+			(at 116.84 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 116.84 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 116.84 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 116.84 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "13b16a8c-2146-457d-a76a-9efa56db78f4")
+		)
+		(pin "2"
+			(uuid "64a488af-552b-41b4-ac24-8b8a1bb1d33d")
+		)
+		(instances
+			(project "KeyPad PCB"
+				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
+					(reference "S10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 101.6 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eff3c452-cd00-47a6-8a56-3b2c8e1000b7")
+		(property "Reference" "S1"
+			(at 101.6 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 101.6 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 101.6 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 101.6 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a9f3ae1-e0b3-4478-bfd7-113078b84170")
+		)
+		(pin "2"
+			(uuid "30f17044-034a-44a6-9845-3a61daa2bc83")
 		)
 		(instances
 			(project ""
 				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
-					(reference "#PWR02")
+					(reference "S1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:US2AA")
+		(at 104.14 132.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa238311-0801-4f7b-b9ee-878882cd665b")
+		(property "Reference" "D9"
+			(at 106.68 130.8099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "US2AA"
+			(at 106.68 133.3499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Resistor_0805"
+			(at 108.585 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/US2AA-D.PDF"
+			(at 104.14 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V, 1.5A, General Purpose Rectifier Diode, SMA(DO-214AC)"
+			(at 104.14 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 104.14 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 104.14 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1574c0b4-99e8-48da-a5f7-42b1ae268991")
+		)
+		(pin "1"
+			(uuid "583e141d-9605-4eef-bcdd-744b5c31dabb")
+		)
+		(instances
+			(project "KeyPad PCB"
+				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 101.6 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff3cf7a9-d26b-4fff-88e8-9ddcfce24572")
+		(property "Reference" "S7"
+			(at 101.6 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 101.6 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
+			(at 101.6 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 101.6 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d9dec186-d9d5-448e-8e0b-e3ab85804112")
+		)
+		(pin "2"
+			(uuid "a356f953-364a-4867-b5e7-dc6ecf94fd75")
+		)
+		(instances
+			(project "KeyPad PCB"
+				(path "/38a95c96-9ce7-419e-896e-62aea4c2a871"
+					(reference "S7")
 					(unit 1)
 				)
 			)
